@@ -15,3 +15,22 @@ const products = [
 // Filter out products with price less than 200
 const affordableProducts = products.filter(product => product.price < 200);
 console.log(affordableProducts);
+
+// 2. Bruk en array metode for å hente kun produktnavnene for rask oversikt.
+
+// Extract all product names for quick overview
+const allProductNames = products.map(product => product.name);
+
+// Log all product names
+console.log(allProductNames);
+
+// 3. Bruk en eller flere array metoder for å hente ut alle produkt navnene innendfor kategori "electronics".
+
+// Filter products that belong to electronics category
+const electronicsProducts = products.filter(product => product.category === "electronics");
+
+// Extract only the names from electronics products
+const electronicsNames = electronicsProducts.map(product => product.name);
+
+// Log the electronics product names
+console.log(electronicsNames);
