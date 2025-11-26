@@ -6,7 +6,8 @@ const products = [
     { name: "Blender", price: 250, category: "home appliances" },
     { name: "Laptop", price: 1200, category: "electronics" },
     { name: "T-shirt", price: 50, category: "clothing" },
-    { name: "Sneakers", price: 300, category: "clothing" }
+    { name: "Sneakers", price: 300, category: "clothing" },
+    { name: "Nintendo Switch", price: 2999.95, category: "electronics" } // la til ekstra produkt for å se om avrunningen i oppgave 5 fungerte og returnerer heltall
 ];
 
 
@@ -42,3 +43,11 @@ const hasExpensiveProducts = products.some(product => product.price >= 1000);
 
 // Log the result
 console.log(hasExpensiveProducts);
+
+//5. Bruk en array metode for å finne den totale kostnaden av alle produktene. Hint: Du skal bare returne et heltall.
+
+// Calculate the total cost of all products and round to nearest integer
+const totalCost = Math.round(products.reduce((sum, product) => sum + product.price, 0));
+
+// Log the total cost
+console.log(totalCost);
