@@ -34,3 +34,11 @@ const electronicsNames = electronicsProducts.map(product => product.name);
 
 // Log the electronics product names
 console.log(electronicsNames);
+
+// 4. Bruk en array metode for å finne ut hvis noen av produktene koster 1000 eller mer. Hint: Du skal ikke liste ut produktene, bare returne true dersom et eller flere produkter koster 1000 eller mer, eller false dersom ingen produkter koster 1000 eller mer.
+
+// Check if any product costs 1000 or more
+const hasExpensiveProducts = products.some(product => product.price >= 1000);
+
+// Log the result
+console.log(hasExpensiveProducts);
